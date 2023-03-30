@@ -53,7 +53,7 @@ class Bank{
         this.branchNum = branchNum;
     }
 
-    // private constructor, only access within class
+    // private Basics.constructor, only access within class
     private Bank(){}
 
     // private object, used only once
