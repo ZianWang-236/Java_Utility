@@ -14,12 +14,15 @@ public class ThreadTest {
     }
 
     public static void printNumber(int min, int max){
-        myThread myThread1 = new myThread(min, min + (max - min) / 3);
-        myThread myThread2 = new myThread(min + ((max - min) / 3), min + ((max - min) * 2 / 3));
-        myThread myThread3 = new myThread(min + ((max - min) * 2 / 3), max);
-        myThread1.start();
-        myThread2.start();
-        myThread3.start();
+        new myThread(min, min + (max - min) / 3).start();
+        new myThread(min + ((max - min) / 3), min + ((max - min) * 2 / 3)).start();
+        new myThread(min + ((max - min) * 2 / 3), max).start();
+//        myThread myThread1 = new myThread(min, min + (max - min) / 3);
+//        myThread myThread2 = new myThread(min + ((max - min) / 3), min + ((max - min) * 2 / 3));
+//        myThread myThread3 = new myThread(min + ((max - min) * 2 / 3), max);
+//        myThread1.start();
+//        myThread2.start();
+//        myThread3.start();
     }
 }
 
