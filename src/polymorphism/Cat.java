@@ -1,4 +1,4 @@
-package test;
+package polymorphism;
 
 public class Cat extends Animal {
     public String name = "Cat：猫";
@@ -18,7 +18,7 @@ public class Cat extends Animal {
     }
 
     public static void main(String[] args) {
-        Animal animal = new Cat();
+        Animal animal = new Cat(); // 向上转型
         Cat cat = (Cat) animal; // 向下转型
         System.out.println(animal.name); // 输出Animal类的name变量
         System.out.println(animal.staticName); // 输出Animal类的staticName变量

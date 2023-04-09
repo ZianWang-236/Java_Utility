@@ -1,4 +1,4 @@
-package test;
+package polymorphism;
 
 public class Animal {
     public String name = "Animal：动物";
