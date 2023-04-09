@@ -28,6 +28,8 @@ public class student extends people{
         System.out.println(a.getGender());
         System.out.println(a.getMajor());
         a.printAge();
+        people.staticFunc();
+        a.staticFunc();
 
     }
 }

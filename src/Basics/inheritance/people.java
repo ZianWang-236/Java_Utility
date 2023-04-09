@@ -14,7 +14,9 @@ public class people {
         this.age = age;
         this.gender = gender;
     }
-
+    public static void staticFunc(){
+        System.out.println("this is a static function");
+    }
     public void printAge(){
         System.out.println(this.age);
     }
